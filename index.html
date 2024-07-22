@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="password-generating-section">
+      <header class="heading"><h1>Password Generator</h1></header>
+      <main>
+        <div class="created-password-section">
+          <p class="created-password"></p>
+          <button class="btn-copy-password">Copy Password</button>
+        </div>
+        <p>
+          Use the slider, and select the options, below, to lengthen your
+          password and strengthen your security. Password length (6-24)
+        </p>
+        <div class="slider-section">
+          <label for="slider">Total Characters:</label>
+          <input
+            type="range"
+            min="6"
+            max="24"
+            value="8"
+            class="slider"
+            id="myRange"
+          />
+          <p class="slider-value">8</p>
+        </div>
+        <div class="coustomization-section">
+          <input id="include-numbers" type="checkbox" value="numbers" />
+          <label>Include Numbers</label>
+          <input id="include-letters" type="checkbox" value="letters" />
+          <label>Include letters</label>
+          <input id="include-mixed-case" type="checkbox" value="mixed-case" />
+          <label>Include Mixed Case</label>
+          <input id="include-punctuation" type="checkbox" value="punctuation" />
+          <label>Include Punctuation</label>
+        </div>
+      </main>
+    </div>
+    <div class="other-passwords-problems-section">
+      <div class="common-passwords-list">
+        <h2>Did you use any of these weak passwords?</h2>
+        <ul>
+          <li>password</li>
+          <li>123456</li>
+          <li>qwerty</li>
+          <li>Your child's name</li>
+          <li>I always use the same password</li>
+        </ul>
+      </div>
+      <div class="common-passwords-problems-list">
+        <h2>Why are those passwords weak?</h2>
+        <ul>
+          <li>They are easy to guess and crack. Really easy!</li>
+          <li>
+            If one of your login is compremised, then a hacker has access to all
+            your services.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

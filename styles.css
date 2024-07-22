@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* css reset code */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset code ends here*/
+
+body {
+  background-image: url("https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/yellow-container-background_O_HTT_hh3.avif");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "lato", "Helvetica Neue", Helvetica, Arial;
+  padding: 0 20px;
+}
+.password-generating-section {
+  padding: 20px;
+  background: rgb(221, 220, 220);
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+.heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.created-password-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin: 10px auto;
+  background-color: rgb(70, 210, 70);
+  border-radius: 7px;
+  padding: 10px;
+}
+.created-password {
+  font-size: 22px;
+}
+.btn-copy-password {
+  width: 130px;
+  height: 35px;
+  border-radius: 7px;
+}
+.btn-copy-password:hover {
+  border: solid 3px;
+  font-weight: bold;
+}
+.slider-section,
+.coustomization-section {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.other-passwords-problems-section {
+  display: flex;
+  flex-direction: column;
+}
+.slider {
+  margin: 0 10px;
+}
+.slider-value {
+  display: inline;
+}
+.common-passwords-list,
+.common-passwords-problems-list {
+  padding: 20px;
+}
+.common-passwords-list h2,
+.common-passwords-problems-list h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.common-passwords-list ul,
+.common-passwords-problems-list ul {
+  list-style-type: disc;
+}
+.common-passwords-list ul li,
+.common-passwords-problems-list ul li {
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .other-passwords-problems-section {
+    flex-direction: row;
+  }
+  .btn-copy-password {
+    width: 200px;
+  }
+  .created-password {
+    font-size: 24px;
+  }
+}
